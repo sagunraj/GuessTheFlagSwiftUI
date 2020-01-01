@@ -13,6 +13,7 @@
 		BA4452B423BB650400D4B1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4452B323BB650400D4B1DF /* Assets.xcassets */; };
 		BA4452B723BB650400D4B1DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4452B623BB650400D4B1DF /* Preview Assets.xcassets */; };
 		BA4452BA23BB650400D4B1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4452B823BB650400D4B1DF /* LaunchScreen.storyboard */; };
+		BA8E171723BC685900E245EF /* FlagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E171623BC685900E245EF /* FlagImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BA4452B623BB650400D4B1DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA4452B923BB650400D4B1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4452BB23BB650400D4B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8E171623BC685900E245EF /* FlagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 		BA4452AC23BB650100D4B1DF /* GuessTheFlagSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BA8E171523BC684500E245EF /* Views */,
 				BA4452AD23BB650100D4B1DF /* AppDelegate.swift */,
 				BA4452AF23BB650100D4B1DF /* SceneDelegate.swift */,
-				BA4452B123BB650100D4B1DF /* ContentView.swift */,
 				BA4452B323BB650400D4B1DF /* Assets.xcassets */,
 				BA4452B823BB650400D4B1DF /* LaunchScreen.storyboard */,
 				BA4452BB23BB650400D4B1DF /* Info.plist */,
@@ -73,6 +75,15 @@
 				BA4452B623BB650400D4B1DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA8E171523BC684500E245EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA4452B123BB650100D4B1DF /* ContentView.swift */,
+				BA8E171623BC685900E245EF /* FlagImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				BA4452AE23BB650100D4B1DF /* AppDelegate.swift in Sources */,
 				BA4452B023BB650100D4B1DF /* SceneDelegate.swift in Sources */,
 				BA4452B223BB650100D4B1DF /* ContentView.swift in Sources */,
+				BA8E171723BC685900E245EF /* FlagImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

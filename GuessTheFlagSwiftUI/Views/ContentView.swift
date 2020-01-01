@@ -31,15 +31,9 @@ struct ContentView: View {
                         .fontWeight(.black)
                 }
                 ForEach(0 ..< 3) { number in
-                    Button(action: {
-                        self.flagTapped(number)
-                    }) {
-                        Image(self.countries[number]).renderingMode(.original)
+                    FlagImage(number: number, countries: self.countries) { (num) in
+                        self.flagTapped(num)
                     }
-                    .clipShape(Capsule())
-                    .overlay(Capsule()
-                    .stroke(Color.black, lineWidth: 1))
-                    .shadow(color: .black, radius: 2)
                 }
                 Text("Score: \(currentScore)")
                     .foregroundColor(.white)
@@ -49,7 +43,7 @@ struct ContentView: View {
         }.alert(isPresented: $showingScore) {
             Alert(title: Text(scoreTitle), message: Text(alertMessage),
                   dismissButton: .default(Text("Continue")){
-                self.askQuestion()
+                    self.askQuestion()
                 })
         }
     }
